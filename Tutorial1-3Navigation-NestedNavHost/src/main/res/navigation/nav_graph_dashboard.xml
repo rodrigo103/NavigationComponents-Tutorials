@@ -12,7 +12,9 @@
             tools:layout="@layout/fragment_dashboard1">
         <action
                 android:id="@+id/action_dashboardFragment1_to_dashboardFragment2"
-                app:destination="@id/dashboardFragment2" />
+                app:destination="@id/dashboardFragment2"
+                app:popUpTo="@id/nav_graph_dashboard"
+                app:popUpToInclusive="true"/>
     </fragment>
 
     <fragment
@@ -20,6 +22,11 @@
             android:name="com.smarttoolfactory.tutorial1_3navigation_nestednavhost.blankfragment.DashboardFragment2"
             android:label="DashboardFragment2"
             tools:layout="@layout/fragment_dashboard2">
+        <action
+                android:id="@+id/action_dashboardFragment2_to_dashboardFragment1"
+                app:destination="@id/dashboard_dest"
+                app:popUpTo="@id/nav_graph_dashboard"
+                app:popUpToInclusive="true"/>
     </fragment>
 
 </navigation>

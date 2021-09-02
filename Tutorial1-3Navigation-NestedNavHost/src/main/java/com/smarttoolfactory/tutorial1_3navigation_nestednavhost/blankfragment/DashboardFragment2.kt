@@ -22,7 +22,7 @@ class DashboardFragment2 : BaseDataBindingFragment<FragmentDashboard2Binding>() 
         }
 
         dataBinding.btnGoToStart.setOnClickListener {
-            findNavController().navigate(R.id.action_global_start)
+            findNavController().navigate(R.id.action_dashboardFragment2_to_dashboardFragment1)
         }
 
     }
