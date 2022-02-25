@@ -9,6 +9,4 @@ class AppbarViewModel : ViewModel() {
     val appbarParentVisibility= MutableLiveData<Boolean>().apply {
         this.value = false
     }
-
-
 }

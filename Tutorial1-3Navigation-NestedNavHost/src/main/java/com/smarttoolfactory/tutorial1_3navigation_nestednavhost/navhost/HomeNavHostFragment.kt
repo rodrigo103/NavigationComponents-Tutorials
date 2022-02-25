@@ -64,7 +64,7 @@ class HomeNavHostFragment : BaseDataBindingFragment<FragmentNavhostHomeBinding>(
 
 
         val nestedNavHostFragment =
-            childFragmentManager.findFragmentById(nestedNavHostFragmentId) as? NavHostFragment
+            childFragmentManager.findFragmentById(R.id.nested_nav_host_fragment) as? NavHostFragment
         navController = nestedNavHostFragment?.navController
 
         println(

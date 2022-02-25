@@ -28,10 +28,20 @@ class TopFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        val tvTop = view.findViewById<TextView>(R.id.tvTop)
+//        val tvTop = view.findViewById<TextView>(R.id.tvTop)
+//
+//        val myArg = arguments?.getInt("myArg")
+//
+//        tvTop.text = "From Bundle myArg $myArg"
+    }
+
+    override fun onResume() {
+        super.onResume()
+
+        val tvTop = view?.findViewById<TextView>(R.id.tvTop)
 
         val myArg = arguments?.getInt("myArg")
 
-        tvTop.text = "From Bundle myArg $myArg"
+        tvTop!!.text = "From Bundle myArg $myArg"
     }
 }
